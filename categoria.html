@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria – Monreal Tours</title>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-links-left">
+        <a href="index.html">Página inicial</a>
+        <a href="categorias.html" class="active">Categorias de viagem</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <a href="index.html" class="nav-logo">
+        <img src="logomonreal.svg" alt="Monreal Tours" />
+      </a>
+      <div class="nav-social">
+        <a href="https://instagram.com/monrealtours" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="assets/icons/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+          <img src="assets/icons/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://wa.me/5511375550500" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <img src="assets/icons/whatsapp.svg" alt="WhatsApp" />
+        </a>
+        <a href="https://youtube.com/@monrealtourstv" target="_blank" rel="noopener" aria-label="YouTube">
+          <img src="assets/icons/youtube.svg" alt="YouTube" />
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-colorbar"></div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Página inicial</a>
+      <a href="categorias.html">Categorias de viagem</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO – populado via JS -->
+  <section class="page-hero" id="categoryHero">
+    <div class="page-hero-bg">
+      <img id="categoryHeroImg" src="" alt="" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>›</span>
+        <a href="categorias.html">Categorias</a> <span>›</span>
+        <span id="categoryBreadcrumb"></span>
+      </nav>
+      <h1 id="categoryTitle"></h1>
+    </div>
+  </section>
+
+  <!-- DESCRIPTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" id="categoryLabel"></div>
+        <h2 class="section-title" id="categorySubtitle"></h2>
+        <p class="section-desc" id="categoryDescription"></p>
+      </div>
+
+      <!-- PRODUTOS GRID -->
+      <!-- 
+        NOTA PARA CMS FUTURO:
+        Esta grid será populada dinamicamente pelo CMS.
+        Cada produto terá: id, nome, operadora, destino, descrição, imagens[], categoria.
+        A estrutura de dados está em assets/js/data.js
+      -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Populado via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section section-newsletter">
+    <div class="newsletter-collage">
+      <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=400&q=80" alt="" class="collage-img" style="--r:0deg;--x:0%;--y:10%" />
+      <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=300&q=80" alt="" class="collage-img" style="--r:3deg;--x:5%;--y:0%" />
+    </div>
+    <div class="newsletter-content">
+      <div class="section-label">Newsletter</div>
+      <h2 class="section-title">Receba Nossas<br /><em>Novidades</em></h2>
+      <p class="section-desc">Inscreva-se para receber ofertas exclusivas, promoções especiais e novidades emocionantes.</p>
+      <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+        <div class="form-row">
+          <input type="email" placeholder="Insira o seu E-mail" required class="form-input" />
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ABOUT CTA -->
+  <section class="section section-about-cta">
+    <div class="container">
+      <div class="about-cta-inner">
+        <h2 class="section-title centered">Descubra o Mundo com a<br /><em>Monreal Tours</em></h2>
+        <p class="section-subtitle centered">Experiências de Viagem Inesquecíveis</p>
+        <p class="section-desc centered">Descubra o mundo com a Monreal Tours, sua agência de viagens de luxo de confiança. Com mais de 40 anos de experiência, oferecemos experiências inesquecíveis e personalizadas para cada cliente.</p>
+        <a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p class="footer-brand">Monreal Tours</p>
+        <div class="footer-address-row">
+          <strong>Endereço:</strong>
+          <span>Av. Morumbi, 6618 - Morumbi, São Paulo - SP, 05650-000</span>
+        </div>
+        <div class="footer-address-row">
+          <strong>Telefone:</strong>
+          <span>(11) 3755-0500</span>
+        </div>
+        <p class="footer-since">Desde 1970</p>
+      </div>
+      <div class="footer-logo-col">
+        <img src="logomonreal.svg" alt="Monreal Tours" />
+        <div class="footer-social">
+          <a href="https://instagram.com/monrealtours" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="assets/icons/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="assets/icons/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://wa.me/5511375550500" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <img src="assets/icons/whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a href="https://youtube.com/@monrealtourstv" target="_blank" rel="noopener" aria-label="YouTube">
+            <img src="assets/icons/youtube.svg" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

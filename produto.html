@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produto – Monreal Tours</title>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-links-left">
+        <a href="index.html">Página inicial</a>
+        <a href="categorias.html" class="active">Categorias de viagem</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <a href="index.html" class="nav-logo">
+        <img src="logomonreal.svg" alt="Monreal Tours" />
+      </a>
+      <div class="nav-social">
+        <a href="https://instagram.com/monrealtours" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="assets/icons/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+          <img src="assets/icons/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://wa.me/5511375550500" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <img src="assets/icons/whatsapp.svg" alt="WhatsApp" />
+        </a>
+        <a href="https://youtube.com/@monrealtourstv" target="_blank" rel="noopener" aria-label="YouTube">
+          <img src="assets/icons/youtube.svg" alt="YouTube" />
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-colorbar"></div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Página inicial</a>
+      <a href="categorias.html">Categorias de viagem</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </nav>
+
+  <!-- HERO PRODUTO -->
+  <section class="page-hero" id="productHero">
+    <div class="page-hero-bg">
+      <img id="productHeroImg" src="" alt="" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>›</span>
+        <a href="categorias.html">Categorias</a> <span>›</span>
+        <a id="productCategoryLink" href="#">—</a> <span>›</span>
+        <span id="productBreadcrumb"></span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- PRODUTO DETAIL -->
+  <section class="section section-product-detail">
+    <div class="container">
+      <div class="product-detail-grid">
+        <!-- INFO -->
+        <div class="product-info">
+          <div class="product-brand" id="productBrand"></div>
+          <h1 class="product-title" id="productTitle"></h1>
+          <p class="product-desc" id="productDesc"></p>
+          <div class="product-meta" id="productMeta"></div>
+        </div>
+
+        <!-- FORMULÁRIO DE INTERESSE -->
+        <div class="product-form-card">
+          <h2>Tem interesse?</h2>
+          <p>Entre em contato conosco para saber mais!</p>
+          <form id="productForm" onsubmit="handleProductForm(event)">
+            <div class="form-group">
+              <input type="text" id="formName" placeholder="Seu nome" required class="form-input" />
+            </div>
+            <div class="form-group">
+              <input type="email" id="formEmail" placeholder="Insira o seu E-mail" required class="form-input" />
+            </div>
+            <div class="form-group">
+              <textarea id="formMessage" placeholder="Detalhe sua mensagem" rows="5" required class="form-input"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Enviar</button>
+          </form>
+          <div class="whatsapp-cta">
+            <p>Você também pode entrar em contato por WhatsApp!</p>
+            <p class="whatsapp-sub">Clique no botão abaixo e fale com um consultor especializado para te atender!</p>
+            <a href="https://wa.me/5511000000000" target="_blank" class="btn btn-whatsapp full-width">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Chamar no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA DO DESTINO -->
+  <section class="section section-gallery">
+    <div class="container">
+      <h2 class="section-title">Veja mais sobre o <em>Destino</em></h2>
+      <div class="gallery-grid" id="productGallery">
+        <!-- Populado via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT CTA -->
+  <section class="section section-about-cta">
+    <div class="container">
+      <div class="about-cta-inner">
+        <h2 class="section-title centered">Descubra o Mundo com a<br /><em>Monreal Tours</em></h2>
+        <p class="section-subtitle centered">Experiências de Viagem Inesquecíveis</p>
+        <p class="section-desc centered">Descubra o mundo com a Monreal Tours, sua agência de viagens de luxo de confiança. Com mais de 40 anos de experiência, oferecemos experiências inesquecíveis e personalizadas para cada cliente.</p>
+        <a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p class="footer-brand">Monreal Tours</p>
+        <div class="footer-address-row">
+          <strong>Endereço:</strong>
+          <span>Av. Morumbi, 6618 - Morumbi, São Paulo - SP, 05650-000</span>
+        </div>
+        <div class="footer-address-row">
+          <strong>Telefone:</strong>
+          <span>(11) 3755-0500</span>
+        </div>
+        <p class="footer-since">Desde 1970</p>
+      </div>
+      <div class="footer-logo-col">
+        <img src="logomonreal.svg" alt="Monreal Tours" />
+        <div class="footer-social">
+          <a href="https://instagram.com/monrealtours" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="assets/icons/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="assets/icons/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://wa.me/5511375550500" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <img src="assets/icons/whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a href="https://youtube.com/@monrealtourstv" target="_blank" rel="noopener" aria-label="YouTube">
+            <img src="assets/icons/youtube.svg" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
