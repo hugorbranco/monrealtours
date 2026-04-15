@@ -156,7 +156,7 @@ ul{list-style:none}
 .nl-collage__strip img{flex:1;object-fit:cover;min-width:0}
 .nl-form{display:flex;flex-direction:column;gap:28px}
 .nl-input-row{display:flex;gap:8px}
-.nl-input-row input{flex:1;height:40px;padding:0 14px;background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.3);border-radius:var(--r);font-family:var(--ff-body);font-size:.9rem;color:#fff;outline:none;transition:border-color .2s}
+.nl-input-row input{flex:1;height:47.3px;padding:0 14px;background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.3);border-radius:var(--r);font-family:var(--ff-body);font-size:.9rem;color:#fff;outline:none;transition:border-color .2s}
 .nl-input-row input::placeholder{color:rgba(255,255,255,.5)}
 .nl-input-row input:focus{border-color:#fff}
 
