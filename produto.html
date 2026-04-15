@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produto — Monreal Tours</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <div class="nav__links">
+      <a href="index.html">Página inicial</a>
+      <a href="categorias.html" class="active">Categorias de viagem</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <a href="index.html" class="nav__logo"><img src="logomonreal.svg" alt="Monreal Tours" /></a>
+    <div class="nav__social">
+      <a href="https://instagram.com/monrealtours" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" /></a>
+      <a href="https://wa.me/5511375550500" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icons/whatsapp.svg" alt="" /></a>
+      <a href="https://youtube.com/@monrealtourstv" target="_blank" rel="noopener" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" /></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__bar"></div>
+  <div class="nav__drawer" id="navDrawer">
+    <a href="index.html">Página inicial</a>
+    <a href="categorias.html">Categorias de viagem</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+  </div>
+</nav>
+
+<!-- HERO PRODUTO -->
+<section class="page-hero" id="prodHero">
+  <div class="page-hero__bg">
+    <img src="" alt="" class="page-hero__img" id="prodHeroImg" />
+    <div class="page-hero__overlay"></div>
+  </div>
+  <div class="page-hero__content wrap">
+    <div class="breadcrumb" id="prodBreadcrumb"></div>
+    <h1 class="page-hero__title" id="prodHeroTitle">—</h1>
+  </div>
+</section>
+
+<!-- PRODUCT DETAIL -->
+<section class="section" style="background:var(--c-navy)">
+  <div class="wrap">
+    <div class="prod-detail" id="prodDetail">
+      <!-- left -->
+      <div id="prodLeft">
+        <div class="prod-detail__gallery-main fade-up">
+          <img src="" alt="" id="prodMainImg" />
+        </div>
+        <p class="prod-detail__brand fade-up" id="prodBrand" style="transition-delay:.05s">—</p>
+        <h2 class="prod-detail__title fade-up" id="prodName" style="transition-delay:.1s">—</h2>
+        <p class="prod-detail__desc fade-up" id="prodDesc" style="transition-delay:.15s">—</p>
+        <div class="prod-detail__gallery-sub fade-up" id="prodGallery" style="transition-delay:.2s"></div>
+      </div>
+
+      <!-- right: interest sidebar -->
+      <div>
+        <div class="interest-box fade-up" style="transition-delay:.12s">
+          <h3>Tem interesse?</h3>
+          <p class="sub">Entre em contato conosco para saber mais!</p>
+          <form class="i-form js-form" id="interestForm">
+            <div class="i-field">
+              <label>Seu e-mail</label>
+              <input type="email" placeholder="nome@email.com" required />
+            </div>
+            <div class="i-field">
+              <label>Detalhe sua mensagem</label>
+              <textarea placeholder="Escreva sua mensagem…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-btn" style="width:100%;justify-content:center">Enviar</button>
+          </form>
+          <div class="form-ok" style="margin-top:12px">✓ Mensagem enviada! Em breve entraremos em contato.</div>
+
+          <div class="wapp-bar">
+            <div class="wapp-bar__ico">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="wapp-bar__text">
+              <h4>Chamar no WhatsApp</h4>
+              <p>Fale com um consultor especializado para te atender!</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5511375550500?text=Olá!%20Tenho%20interesse%20neste%20destino."
+             target="_blank" rel="noopener"
+             class="btn btn-wapp" style="width:100%;justify-content:center;margin-top:12px">
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section-nl">
+  <div class="wrap">
+    <div class="nl-layout">
+      <div class="nl-collage fade-up">
+        <div class="nl-collage__strip">
+          <img src="https://images.unsplash.com/photo-1414438992182-69e404046b44?w=300&q=80" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=300&q=80" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=300&q=80" alt="" loading="lazy" />
+        </div>
+      </div>
+      <div class="nl-form fade-up" style="transition-delay:.1s">
+        <div class="sec-hd" style="margin-bottom:0">
+          <p class="sec-hd__pre">Newsletter</p>
+          <h2 class="sec-hd__title">Receba Nossas Novidades</h2>
+          <p class="sec-hd__desc">Ofertas exclusivas e promoções especiais diretamente em sua caixa de entrada.</p>
+        </div>
+        <form id="nlForm">
+          <div class="nl-input-row">
+            <input type="email" placeholder="Seu e-mail" required />
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+          <div id="nlOk" class="form-ok" style="display:none;margin-top:10px">✓ Inscrito!</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT CTA -->
+<section class="section-about-cta">
+  <div class="wrap">
+    <div class="about-cta-inner fade-up">
+      <h2 class="sec-hd__title" style="text-align:center;margin-bottom:8px">Descubra o Mundo com a Monreal Tours</h2>
+      <p class="sec-hd__desc" style="text-align:center;margin:0 auto 28px">Com mais de 40 anos de experiência, oferecemos as melhores experiências personalizadas para cada destino.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+        <a href="categorias.html" class="btn btn-primary">Ver mais destinos</a>
+        <a href="contato.html" class="btn btn-ghost">Entre em contato</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <p class="footer__brand">Monreal Tours</p>
+        <p class="footer__row"><strong>Endereço:</strong><span>Av. Morumbi, 6618 — Morumbi, São Paulo – SP, 05650-000</span></p>
+        <p class="footer__row"><strong>Telefone:</strong><span>(11) 3755-0500</span></p>
+        <p class="footer__since">Desde 1970</p>
+      </div>
+      <div class="footer__right">
+        <div class="footer__logo"><img src="logomonreal.svg" alt="Monreal Tours" /></div>
+        <div class="footer__social">
+          <a href="https://instagram.com/monrealtours" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" /></a>
+          <a href="https://wa.me/5511375550500" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icons/whatsapp.svg" alt="" /></a>
+          <a href="https://youtube.com/@monrealtourstv" target="_blank" rel="noopener" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+(function() {
+  const params = new URLSearchParams(location.search);
+  const prodId = params.get('id');
+  if (!prodId || !window.MT) return;
+
+  const prod = window.MT.products.find(p => p.id === prodId);
+  if (!prod) return;
+
+  const cat = window.MT.categories.find(c => c.id === prod.category);
+  document.title = prod.brand + ' ' + prod.name + ' — Monreal Tours';
+
+  // Hero
+  document.getElementById('prodHeroImg').src = prod.img;
+  document.getElementById('prodHeroImg').alt = prod.name;
+  document.getElementById('prodHeroTitle').textContent = prod.brand + ' ' + prod.name;
+
+  // Breadcrumb
+  const bc = document.getElementById('prodBreadcrumb');
+  bc.innerHTML = `<a href="index.html">Início</a><span>/</span><a href="categorias.html">Categorias</a><span>/</span><a href="categoria.html?cat=${prod.category}">${cat ? cat.name : prod.category}</a><span>/</span><span>${prod.name}</span>`;
+
+  // Content
+  document.getElementById('prodMainImg').src = prod.img;
+  document.getElementById('prodMainImg').alt = prod.name;
+  document.getElementById('prodBrand').textContent = prod.brand;
+  document.getElementById('prodName').textContent = prod.name;
+  document.getElementById('prodDesc').textContent = prod.desc;
+
+  // Gallery
+  const gal = document.getElementById('prodGallery');
+  if (prod.gallery && prod.gallery.length) {
+    gal.innerHTML = '<p style="font-family:var(--ff-head);font-size:1.1rem;font-weight:600;color:#fff;margin-bottom:16px;grid-column:1/-1">Veja mais sobre o Destino</p>';
+    prod.gallery.forEach(url => {
+      const img = document.createElement('img');
+      img.src = url;
+      img.alt = '';
+      img.loading = 'lazy';
+      img.style.cssText = 'border-radius:6px;width:100%;aspect-ratio:4/3;object-fit:cover;transition:opacity .2s';
+      img.onmouseover = () => img.style.opacity = '.85';
+      img.onmouseout = () => img.style.opacity = '1';
+      gal.appendChild(img);
+    });
+    gal.style.display = 'grid';
+    gal.style.gridTemplateColumns = 'repeat(3,1fr)';
+    gal.style.gap = '10px';
+  }
+
+  document.querySelectorAll('.fade-up:not(.observed)').forEach(el => {
+    el.classList.add('observed');
+    new IntersectionObserver((es, o) => {
+      es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); o.unobserve(e.target); } });
+    }, { threshold: 0.1 }).observe(el);
+  });
+})();
+</script>
+</body>
+</html>

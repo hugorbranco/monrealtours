@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categorias de Viagem — Monreal Tours</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <div class="nav__links">
+      <a href="index.html">Página inicial</a>
+      <a href="categorias.html" class="active">Categorias de viagem</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <a href="index.html" class="nav__logo"><img src="logomonreal.svg" alt="Monreal Tours" /></a>
+    <div class="nav__social">
+      <a href="https://instagram.com/monrealtours" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" /></a>
+      <a href="https://wa.me/5511375550500" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icons/whatsapp.svg" alt="" /></a>
+      <a href="https://youtube.com/@monrealtourstv" target="_blank" rel="noopener" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" /></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__bar"></div>
+  <div class="nav__drawer" id="navDrawer">
+    <a href="index.html">Página inicial</a>
+    <a href="categorias.html">Categorias de viagem</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80" alt="" class="page-hero__img" />
+    <div class="page-hero__overlay"></div>
+  </div>
+  <div class="page-hero__content wrap">
+    <h1 class="page-hero__title">Categorias de Viagens</h1>
+  </div>
+</section>
+
+<!-- CATEGORIES LIST -->
+<section class="section" style="background:var(--c-navy)">
+  <div class="wrap">
+    <div class="sec-hd fade-up">
+      <p class="sec-hd__pre">Explore a Diversidade de Viagens</p>
+      <h2 class="sec-hd__title">Explore Nossas Experiências Únicas</h2>
+      <p class="sec-hd__desc">Veja as diversas categorias de viagens oferecidas pela Monreal Tours, desde aventuras na neve até relativas luxuosas em resorts exclusivos e encontre a experiência perfeita para a próxima jornada.</p>
+    </div>
+    <div class="cats-list" id="catsList"></div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="section-ig">
+  <div class="wrap">
+    <div class="ig-layout">
+      <div class="ig-text fade-up">
+        <div class="sec-hd" style="margin-bottom:0">
+          <p class="sec-hd__pre">@monrealtours</p>
+          <h2 class="sec-hd__title">Siga-nos no Instagram</h2>
+          <p class="sec-hd__desc">Fique por dentro das últimas novidades, promoções exclusivas e destinos incríveis. Embarque em uma jornada de experiências inesquecíveis.</p>
+        </div>
+        <a href="https://instagram.com/monrealtours" target="_blank" rel="noopener" class="btn btn-primary" style="align-self:flex-start">Acessar @monrealtours</a>
+      </div>
+      <div class="ig-grid fade-up" style="transition-delay:.1s">
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=80" alt="" class="ig-photo" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1549294413-26f195200c16?w=400&q=80" alt="" class="ig-photo" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&q=80" alt="" class="ig-photo" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&q=80" alt="" class="ig-photo" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section-nl">
+  <div class="wrap">
+    <div class="nl-layout">
+      <div class="nl-collage fade-up">
+        <div class="nl-collage__strip">
+          <img src="https://images.unsplash.com/photo-1414438992182-69e404046b44?w=300&q=80" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=300&q=80" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=300&q=80" alt="" loading="lazy" />
+        </div>
+      </div>
+      <div class="nl-form fade-up" style="transition-delay:.1s">
+        <div class="sec-hd" style="margin-bottom:0">
+          <p class="sec-hd__pre">Newsletter</p>
+          <h2 class="sec-hd__title">Receba Nossas Novidades</h2>
+          <p class="sec-hd__desc">Inscreva-se para receber ofertas exclusivas e promoções especiais diretamente em sua caixa de entrada.</p>
+        </div>
+        <form id="nlForm">
+          <div class="nl-input-row">
+            <input type="email" placeholder="Seu e-mail" required />
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+          <div id="nlOk" class="form-ok" style="display:none;margin-top:10px">✓ Inscrito com sucesso!</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT CTA -->
+<section class="section-about-cta">
+  <div class="wrap">
+    <div class="about-cta-inner fade-up">
+      <p class="sec-hd__pre" style="text-align:center">Quem somos</p>
+      <h2 class="sec-hd__title" style="text-align:center;margin-bottom:8px">Descubra o Mundo com a Monreal Tours</h2>
+      <p style="font-family:var(--ff-head);font-size:1rem;font-weight:600;color:rgba(255,255,255,.85);text-align:center;margin-bottom:8px">Experiências de Viagem Inesquecíveis</p>
+      <p class="sec-hd__desc" style="text-align:center;margin:0 auto 28px">Com mais de 40 anos de experiência, a Monreal Tours oferece as melhores experiências personalizadas para cada destino.</p>
+      <a href="sobre.html" class="btn btn-primary">Conheça nossa história</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <p class="footer__brand">Monreal Tours</p>
+        <p class="footer__row"><strong>Endereço:</strong><span>Av. Morumbi, 6618 — Morumbi, São Paulo – SP, 05650-000</span></p>
+        <p class="footer__row"><strong>Telefone:</strong><span>(11) 3755-0500</span></p>
+        <p class="footer__since">Desde 1970</p>
+      </div>
+      <div class="footer__right">
+        <div class="footer__logo"><img src="logomonreal.svg" alt="Monreal Tours" /></div>
+        <div class="footer__social">
+          <a href="https://instagram.com/monrealtours" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" /></a>
+          <a href="https://wa.me/5511375550500" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icons/whatsapp.svg" alt="" /></a>
+          <a href="https://youtube.com/@monrealtourstv" target="_blank" rel="noopener" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+(function() {
+  const list = document.getElementById('catsList');
+  if (!list || !window.MT) return;
+  window.MT.categories.forEach((cat, i) => {
+    const d = document.createElement('a');
+    d.href = 'categoria.html?cat=' + cat.id;
+    d.className = 'cat-list-card fade-up';
+    d.style.transitionDelay = (i * 0.07) + 's';
+    d.innerHTML = `
+      <div class="cat-list-card__img-wrap">
+        <img src="${cat.img}" alt="${cat.name}" class="cat-list-card__img" loading="lazy" />
+      </div>
+      <div class="cat-list-card__body">
+        <p class="cat-list-card__name">${cat.name}</p>
+        <p class="cat-list-card__sub">${cat.subtitle}</p>
+        <p class="cat-list-card__desc">${cat.desc}</p>
+        <div class="cat-list-card__foot">
+          <span class="cat-list-card__link">Acessar</span>
+        </div>
+      </div>`;
+    list.appendChild(d);
+  });
+  document.querySelectorAll('.fade-up:not(.observed)').forEach(el => {
+    el.classList.add('observed');
+    new IntersectionObserver((es, o) => {
+      es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); o.unobserve(e.target); } });
+    }, { threshold: 0.1 }).observe(el);
+  });
+})();
+</script>
+</body>
+</html>

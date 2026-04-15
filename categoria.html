@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categoria — Monreal Tours</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <div class="nav__links">
+      <a href="index.html">Página inicial</a>
+      <a href="categorias.html" class="active">Categorias de viagem</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <a href="index.html" class="nav__logo"><img src="logomonreal.svg" alt="Monreal Tours" /></a>
+    <div class="nav__social">
+      <a href="https://instagram.com/monrealtours" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" /></a>
+      <a href="https://wa.me/5511375550500" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icons/whatsapp.svg" alt="" /></a>
+      <a href="https://youtube.com/@monrealtourstv" target="_blank" rel="noopener" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" /></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__bar"></div>
+  <div class="nav__drawer" id="navDrawer">
+    <a href="index.html">Página inicial</a>
+    <a href="categorias.html">Categorias de viagem</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+  </div>
+</nav>
+
+<!-- HERO (dinâmico) -->
+<section class="page-hero" id="catHero">
+  <div class="page-hero__bg">
+    <img src="" alt="" class="page-hero__img" id="catHeroImg" />
+    <div class="page-hero__overlay"></div>
+  </div>
+  <div class="page-hero__content wrap">
+    <div class="breadcrumb">
+      <a href="index.html">Início</a>
+      <span>/</span>
+      <a href="categorias.html">Categorias</a>
+      <span>/</span>
+      <span id="catBreadcrumb">—</span>
+    </div>
+    <h1 class="page-hero__title" id="catTitle">—</h1>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" style="background:var(--c-navy)">
+  <div class="wrap">
+    <div class="sec-hd fade-up" id="catHd">
+      <p class="sec-hd__pre" id="catPre">—</p>
+      <h2 class="sec-hd__title" id="catH2">—</h2>
+      <p class="sec-hd__desc" id="catDesc">—</p>
+    </div>
+    <div class="products-grid" id="productsGrid"></div>
+    <p id="noProds" style="display:none;text-align:center;color:var(--c-muted);font-family:var(--ff-body);padding:40px 0">
+      Nenhum produto encontrado para esta categoria. <a href="contato.html" style="color:var(--c-orange)">Entre em contato</a> para saber mais.
+    </p>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section-nl">
+  <div class="wrap">
+    <div class="nl-layout">
+      <div class="nl-collage fade-up">
+        <div class="nl-collage__strip">
+          <img src="https://images.unsplash.com/photo-1414438992182-69e404046b44?w=300&q=80" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=300&q=80" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=300&q=80" alt="" loading="lazy" />
+        </div>
+      </div>
+      <div class="nl-form fade-up" style="transition-delay:.1s">
+        <div class="sec-hd" style="margin-bottom:0">
+          <p class="sec-hd__pre">Newsletter</p>
+          <h2 class="sec-hd__title">Receba Nossas Novidades</h2>
+          <p class="sec-hd__desc">Ofertas exclusivas e promoções especiais diretamente em sua caixa de entrada.</p>
+        </div>
+        <form id="nlForm">
+          <div class="nl-input-row">
+            <input type="email" placeholder="Seu e-mail" required />
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+          <div id="nlOk" class="form-ok" style="display:none;margin-top:10px">✓ Inscrito com sucesso!</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT CTA -->
+<section class="section-about-cta">
+  <div class="wrap">
+    <div class="about-cta-inner fade-up">
+      <h2 class="sec-hd__title" style="text-align:center;margin-bottom:8px">Descubra o Mundo com a Monreal Tours</h2>
+      <p class="sec-hd__desc" style="text-align:center;margin:0 auto 28px">Com mais de 40 anos de experiência, oferecemos as melhores experiências personalizadas para cada destino.</p>
+      <a href="contato.html" class="btn btn-primary">Entre em contato</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <p class="footer__brand">Monreal Tours</p>
+        <p class="footer__row"><strong>Endereço:</strong><span>Av. Morumbi, 6618 — Morumbi, São Paulo – SP, 05650-000</span></p>
+        <p class="footer__row"><strong>Telefone:</strong><span>(11) 3755-0500</span></p>
+        <p class="footer__since">Desde 1970</p>
+      </div>
+      <div class="footer__right">
+        <div class="footer__logo"><img src="logomonreal.svg" alt="Monreal Tours" /></div>
+        <div class="footer__social">
+          <a href="https://instagram.com/monrealtours" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" /></a>
+          <a href="https://wa.me/5511375550500" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icons/whatsapp.svg" alt="" /></a>
+          <a href="https://youtube.com/@monrealtourstv" target="_blank" rel="noopener" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+(function() {
+  const params = new URLSearchParams(location.search);
+  const catId = params.get('cat');
+  if (!catId || !window.MT) return;
+
+  const cat = window.MT.categories.find(c => c.id === catId);
+  if (!cat) return;
+
+  // Meta
+  document.title = cat.name + ' — Monreal Tours';
+
+  // Hero
+  const heroImg = document.getElementById('catHeroImg');
+  heroImg.src = cat.img;
+  heroImg.alt = cat.name;
+  document.getElementById('catTitle').textContent = cat.name;
+  document.getElementById('catBreadcrumb').textContent = cat.name;
+
+  // Section header
+  document.getElementById('catPre').textContent = cat.subtitle;
+  document.getElementById('catH2').textContent = 'Aventuras em ' + cat.name;
+  document.getElementById('catDesc').textContent = cat.desc + ' Confira abaixo os destinos e pacotes disponíveis nesta categoria.';
+
+  // Products
+  const prods = window.MT.products.filter(p => p.category === catId);
+  const grid = document.getElementById('productsGrid');
+
+  if (prods.length === 0) {
+    document.getElementById('noProds').style.display = 'block';
+    return;
+  }
+
+  prods.forEach((p, i) => {
+    const d = document.createElement('a');
+    d.href = 'produto.html?id=' + p.id;
+    d.className = 'prod-card fade-up';
+    d.style.transitionDelay = (i * 0.08) + 's';
+    d.innerHTML = `
+      <div class="prod-card__img-wrap">
+        <img src="${p.img}" alt="${p.name}" class="prod-card__img" loading="lazy" />
+      </div>
+      <div class="prod-card__body">
+        <p class="prod-card__brand">${p.brand}</p>
+        <p class="prod-card__name">${p.name}</p>
+        <p class="prod-card__desc">${p.desc.substring(0, 120)}…</p>
+        <div class="prod-card__foot">
+          <span class="prod-card__link">Quero ir!</span>
+        </div>
+      </div>`;
+    grid.appendChild(d);
+  });
+
+  document.querySelectorAll('.fade-up:not(.observed)').forEach(el => {
+    el.classList.add('observed');
+    new IntersectionObserver((es, o) => {
+      es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); o.unobserve(e.target); } });
+    }, { threshold: 0.1 }).observe(el);
+  });
+})();
+</script>
+</body>
+</html>
